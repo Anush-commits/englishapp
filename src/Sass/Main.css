@@ -26,33 +26,38 @@ nav ul li a {
 }
 
 .list_of_themes {
-  padding: 1em 0em;
+  padding: 5em 0em;
   margin: 1em 0em;
   color: gray;
 }
 
 .list_of_themes li {
   text-align: start;
-  width: 70%;
+  width: 40%;
   margin: 0 auto;
 }
 
 .list_of_themes li a {
   text-decoration: none;
-  color: #06bef0;
+  color: #282c34;
+  font-size: 1.2em;
   line-height: 2em;
 }
 
 .list_of_themes li a:hover {
   text-decoration: underline;
+  color: #61dafb;
 }
 
 .refTitle {
-  color: white;
+  color: #61dafb;
   padding: 0.7em;
   font-size: 1.7em;
   font-weight: 500;
   background-color: #282c34;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .refer .back, .basic .back {
@@ -65,62 +70,28 @@ nav ul li a {
   position: relative;
 }
 
+.theme {
+  font-size: 80px;
+  background-color: #0596be;
+  padding: 1em 0em;
+  position: fixed;
+  width: 100%;
+}
+
 article {
-  border: 2px dotted #282c34;
+  padding-top: 10vh;
+}
+
+article h3 {
   text-align: start;
-  padding: 1em;
-  width: 90%;
+  padding-left: 5em;
+}
+
+article ul {
+  text-align: start;
+  width: 75%;
   margin: 1em auto;
-}
-
-article ol, article p, article h1, article h2 {
-  margin-top: 2em;
-  line-height: 1.6em;
-}
-
-.usageList {
-  margin: 1em auto;
-  width: 80%;
-}
-
-.list {
-  padding-left: 2em;
-  padding-top: 0.5em;
-}
-
-.anim {
-  -webkit-animation: themes 1s linear  forwards;
-          animation: themes 1s linear  forwards;
-}
-
-@-webkit-keyframes themes {
-  from {
-    opacity: 0;
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    background-color: white;
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-    background-color: #282c34;
-  }
-}
-
-@keyframes themes {
-  from {
-    opacity: 0;
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    background-color: white;
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-    background-color: #282c34;
-  }
+  line-height: 2em;
 }
 
 .tenseform {

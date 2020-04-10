@@ -37,8 +37,7 @@ const Data = [
             "contents": [
                 {
                     "id": "1.1",
-                    "theme": `Questions`,
-                    "definition": ["Անգլերենում կան հարցականի չորս հիմնական տեսակներ`",
+                    "intro": ["Անգլերենում կան հարցականի չորս հիմնական տեսակներ: Դրանք են․",
                         [
                             {
                                 "type": "Yes/no",
@@ -57,58 +56,66 @@ const Data = [
                                 "shortdescription": " - Հարցեր, որ ի պատասխան պահանջում են ստանալ տեղեկություն"
                             }
                         ],
-                    ],
-                    "description": [
-                       ["Yes/ no questions(closed questions)", "Yes/no հարցերը այն հարցերն են, որոնց կարող ենք տալ պարզ 'yes' կամ 'no' պատասխան։ Yes/no question-ը պետք է կազմված լինի to be, do, have բայերից որևէ մեկով կամ մոդալ բայով։ Անհնար է կազմել yes/no questions առանց այս բայերից որևէ մեկի կիրառման։", ["Dave: Are you hungry?", "Mike: Yes, I'm starving."]],
-                        ["Wh-questions", " Այս հարցերը սկսվում են հարցական բառով, ինչպիսիք են՝ who, what, where, when, why or how. Մենք տալիս ենք այս տեսակի հարցեր երբ ակնկալում ենք ստանալ տարբեր տեսակի տեղեկություններ ժամանակի, վայրերի, առարկաների, երևույթների և այլնի վերաբերյալ։ Այս հարցերին չենք կարող պատասխանել yes կամ no. Սրանք կարող են գործածվել կամ ենթակային կամ ստորոգյալին հարց ուղղելիս: Համեմատեք այս երկու նախադասությունները․", ["Who loves Lucy?", "Who does Lucy love"], "Ներքևում կարող եք տեսնել հարցական բառերը և օրինակ նախադասություններ՝", ["Dave: Why are you so hungry?", "Mike: I didn't eat breakfast." ]],
-                        ["What is a question tag?", "Question tag-ը (նաև՝ question tail կամ tag question) քերականական կառուցվածք է, որում պատմողական կամ հրամայական նախադասությունը վերածվում է հարցականի՝ հարցական կարճ մասնիկների միջոցով, որ կարող են ավելացվել պատմողական կամ հրամայական նախադասության վերջում։ Օրինակ՝ 'You`re John, aren't you?' նախադասության մեջ  'You're John' հատվածը վերածվել է հարցականի 'aren`t you'(դու ես չէ՞) մասի ավելացմամբ։  Հարցերը շատ տարածված են հիմնականում խոսակցական անգլերենում։ Մասնիկները սովորաբար ավելացվում են նախադասությանը, ցույց տալու համար կարծիք, հնարավորություն կամ հավանականություն։ Չնայած որ, դրանք իրական հարցեր չեն, սակայն կազմվում են հարցական կառուցվածքով։  "],
-                       
                     ]
                 },
-
                 {
                     "id": "1.2",
-                    "theme": "Present simple and present continuous",
-                    "definition": [["Ներկա ժամանակաձևը բայի հիմնական ձևն է։ Մենք գործածում ենք ներկա անորոշ ժամանակաձևը՝"], [{
-                        "type": "Որոշ սովություններ նկարագրելիս",
-                        "example": ""
-                    }, {
-                        "type": "Բացարձակ ճշմարտությունների դեպքում",
-                        "example": ""
+                    "intro": ["Ներկա ժամանակաձևը բայի հիմնական ձևն է։ Մենք գործածում ենք ներկա անորոշ ժամանակաձևը՝",
+                        [{
+                            "type": "Որոշ սովություններ նկարագրելիս",
+                            "example": "- Օրինակ՝ I don't always go to lectures that are early in the morning!"
+                        }, {
+                            "type": "Բացարձակ ճշմարտությունների դեպքում",
+                            "example": "- Օրինակ՝ The left hand side of the brain controls the right-hand side of the body."
 
-                    }, {
-                        "type": "Մշտական իրավիճակներում և դեպքերում",
-                        "example": ""
-                    }, { "type": "Կատակներ և այլ ոչ պաշտոնական պատմություններ պատմելիս", "example": "" },
-                    { "type": "Ամփոփումներում", "example": "" }, { "type": "Թերթերի գ;խագրերում", "example": "" }, { "type": "Ցուցումներում", "example": "" },{"type":"Ասույթներում և ասացվածքներում"}]],
-                    "tenseform": [
-                        [["I work", "You work", "He/she/it works"], ["We work", "You work", "They work"]],
-                        [["I am working", "You are working", "He/she/it is working"], ["We are working", "You are working", "They are working"]],
-
+                        }, {
+                            "type": "Մշտական իրավիճակներում և դեպքերում",
+                            "example": "- Օրինակ՝ Anne teaches French at a scool."
+                        }, {
+                            "type": "Կատակներ և այլ ոչ պաշտոնական պատմություններ պատմելիս",
+                            "example": "- Օրինակ՝ So, a man goes to see his psychiatrist"
+                        },
+                        { "type": "Ամփոփումներում", "example": "- Օրինակ՝ The film ends with us not knowing whether they have been successful or not." },
+                        { "type": "Թերթերի գլխագրերում", "example": "- Օրինակ՝ HAWKING WINS NOBEL PRIZE" },
+                        { "type": "Ցուցումներում", "example": "- Օրինակ՝ You turn left at the end of the road and the scool is up ahead" },
+                        { "type": "Ասույթներում և ասացվածքներում", "example": "- Օրինակ՝ Too many cooks spoil the broth." }]
                     ],
-                    "negativeform": [
-                        [["I don't dance-Ես չեմ պարում", "You don't dance-Դու չես պարում", "He/she/it doesn't dance-Նա չի պարում"], ["We don't dance-Մենք չենք պարում", "You don't dance-Դուք չեք պարում", "They don't dance-Նրանք չեն պարում"]]
-                    ],
-                    "questionform": [
-                        [["Do I work at the bank?", "Do you work at the bank", "Does he/she/it work at the bank"], ["Do we work at the bank?", "Do you work at the bank?", "Do they work at the bank?"]],
-                        {
-                            "definition": ""
-                        }
-                    ],
-
-                    "notes": {
-                        "NoteTitle": "Շատ կարևոր հուշումներ անորոշ ներկա ժամանակաձևի համար",
-                        "noteslist": [
-                            "Եզակի թվի երրորդ դեմքում բայը միշտ վերջանում է s -ով` He wants, she needs, he gives, she thinks. ",
-                            "Ժխտական և հարցական նախադասություններում եզակի թվի երրորդ դեմքի համար օժանդակ բայի  'DO'-ն դառնում է 'DOES': Օրինակ՝ He wants ice cream. Does he want strawberry? He does not  want vanilla.",
-                            "Այն բայերը որոնք վերջանում են y-ով երրորդ դեմքի դեպքում y-ը փոխվում է ies-ի` fly —> flies, cry —> cries. Բացառությամբ այն բայերի որոնցում y-ին նախորդում է ձայնավոր՝ play —> plays, pray —> prays",
-                            "Ավելացրեք -es այն բայերին որոնք վերջանում են՝ -ss, -x, -sh, -ch: he passes, she catches, he fixes, it pushes."
+                    "tenseforms": {
+                        "negativeform": [
+                            [["I don't dance", "You don't dance", "He/she/it doesn't dance"], ["We don't dance", "You don't dance", "They don't dance"]]
                         ],
-                        "examples": [["He goes", "to scool every morning."], ["She understands", "English."], ["It mixes", "the sand and the water."]]
+                        "affirmativeform":[ [["I work", "You work", "He/she/it works"], ["We work", "You work", "They work"]],
+                        [["I am working", "You are working", "He/she/it is working"], ["We are working", "You are working", "They are working"]]],
+                        "interrogativeform": [
+                            [["Do I work at the bank?", "Do you work at the bank", "Does he/she/it work at the bank"], ["Do we work at the bank?", "Do you work at the bank?", "Do they work at the bank?"]],
+                           ]
                     }
-
-                }
-
+                },
+                { "id": "1.3" },
+                { "id": "1.4" },
+                { "id": "1.5" },
+                { "id": "1.6" },
+                { "id": "1.7" },
+                { "id": "1.8" },
+                { "id": "1.9" },
+                { "id": "1.10" },
+                { "id": "1.11" },
+                { "id": "1.12" },
+                { "id": "1.13" },
+                { "id": "1.14" },
+                { "id": "1.15" },
+                { "id": "1.16" },
+                { "id": "1.17" },
+                { "id": "1.18" },
+                { "id": "1.19" },
+                { "id": "1.20" },
+                { "id": "1.21" },
+                { "id": "1.22" },
+                { "id": "1.23" },
+                { "id": "1.24" },
+                { "id": "1.25" },
+                { "id": "1.26" },
+                { "id": "1.27" },
 
 
 

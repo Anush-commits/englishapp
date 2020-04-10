@@ -1,14 +1,6 @@
 import React from 'react'
-import {Link, Route, Switch} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
-export default function Header(props) {
-    return (
-       <>
-           
-               <li> <Link to={props.where}> {props.link} </Link> </li>
-           <Switch>
-           <Route exact path={props.where} component={props.comp}/>
-           </Switch>
-      </>
-    )
-}
+const Header = props => <li> <NavLink to={props.where}> {props.link} </NavLink> </li>
+              
+export default Header

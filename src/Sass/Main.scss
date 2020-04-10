@@ -22,19 +22,21 @@ nav {
 }
 
 .list_of_themes {
-    padding: 1em 0em;
+    padding: 5em 0em;
     margin: 1em 0em;
     color: gray;
     li {
         text-align: start;
-        width: 70%;
+        width: 40%;
         margin: 0 auto;
         a {
             text-decoration: none;
-            color: darken($color: $seconColor, $amount: 20);
+            color: $bg;
+            font-size: 1.2em;
             line-height: 2em;
             &:hover {
                 text-decoration: underline;
+                color: $seconColor;
             }
         }
     }
@@ -42,15 +44,19 @@ nav {
 
 
 .refTitle {
-    color: white;
+    color: $seconColor;
     padding: 0.7em;
     font-size: 1.7em;
     font-weight: 500;
     background-color: $bg;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-.refer, .basic {    
 
+
+.refer, .basic {    
 .back {
     background-color: $seconColor;
     border: none;
@@ -63,44 +69,26 @@ nav {
 }
 }
 
-
-
+.theme {
+    font-size: 80px;
+    background-color: darken($color: $seconColor, $amount: 30);
+    padding: 1em 0em;
+    position: fixed;
+    width: 100%;
+}
 article {
-    border: 2px dotted $bg;
-    text-align: start;
-    padding: 1em;
-    width: 90%;
-    margin: 1em auto;
-    ol, p, h1, h2 {
-        margin-top: 2em;
-        line-height: 1.6em;
+    padding-top: 10vh;
+ h3 {
+     text-align: start;
+     padding-left: 5em;
+ }
+    ul {
+        text-align: start;
+        width: 75%; 
+        margin: 1em auto;
+        line-height: 2em;
     }
-}
-.usageList {
-    margin: 1em auto;
-    width: 80%;
-}
-.list {
-    padding-left: 2em;
-    padding-top: 0.5em;
-}
-
-.anim {
-    animation: themes 1s linear  forwards;
-}
-
-@keyframes themes {
-     from {
-         opacity: 0;
-         transform: scaleY(0);
-         background-color: white;
-     }
-     to {
-        opacity: 1;
-        transform: scaleY(1);
-        background-color: $bg;
-        
-    }
+   
 }
 
 .tenseform {
