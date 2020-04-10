@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: calc(10px + 2vmin);
+}
+
+nav {
+  background-color: #282c34;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: start;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 1em 1em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #61dafb;
+}
+
+.list_of_themes {
+  padding: 1em 0em;
+  margin: 1em 0em;
+  color: gray;
+}
+
+.list_of_themes li {
+  text-align: start;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.list_of_themes li a {
+  text-decoration: none;
+  color: #06bef0;
+  line-height: 2em;
+}
+
+.list_of_themes li a:hover {
+  text-decoration: underline;
+}
+
+.refTitle {
+  color: white;
+  padding: 0.7em;
+  font-size: 1.7em;
+  font-weight: 500;
+  background-color: #282c34;
+}
+
+.refer .back, .basic .back {
+  background-color: #61dafb;
+  border: none;
+  padding: 0.5em 1em;
+  float: left;
+  top: -3em;
+  left: 0.1em;
+  position: relative;
+}
+
+article {
+  border: 2px dotted #282c34;
+  text-align: start;
+  padding: 1em;
+  width: 90%;
+  margin: 1em auto;
+}
+
+article ol, article p, article h1, article h2 {
+  margin-top: 2em;
+  line-height: 1.6em;
+}
+
+.usageList {
+  margin: 1em auto;
+  width: 80%;
+}
+
+.list {
+  padding-left: 2em;
+  padding-top: 0.5em;
+}
+
+.anim {
+  -webkit-animation: themes 1s linear  forwards;
+          animation: themes 1s linear  forwards;
+}
+
+@-webkit-keyframes themes {
+  from {
+    opacity: 0;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    background-color: white;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    background-color: #282c34;
+  }
+}
+
+@keyframes themes {
+  from {
+    opacity: 0;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    background-color: white;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    background-color: #282c34;
+  }
+}
+
+.tenseform {
+  display: -ms-grid;
+  display: grid;
+  background-color: #333842;
+  border-radius: 1em;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.tenseform ul {
+  list-style: none;
+}
+
+.tenseform ul li {
+  line-height: 2.5em;
+  font-weight: 500;
+  color: #05aad7;
+}
+
+.notes {
+  background-color: #84e2fc;
+  padding: 1px 1em;
+  border-radius: 1em;
+  margin: 1em;
+  margin-top: 4em;
+}
+
+.notes ol, .notes .examples {
+  width: 85%;
+  margin: 1em auto;
+}
+
+@media (min-width: 5000px) and (max-width: 8000px) {
+  .tenseform, .notes {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .tenses h1 {
+    width: 73%;
+    margin: 0 auto;
+    margin-top: 2em;
+  }
+  .notes {
+    margin-top: 2em;
+  }
+}
+/*# sourceMappingURL=Main.css.map */

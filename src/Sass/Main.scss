@@ -1,0 +1,156 @@
+$seconColor: #61dafb;
+$bg: #282c34;
+*{
+    margin: 0;
+    padding: 0;
+    font-size: calc(10px + 2vmin);
+}
+nav {
+    background-color: $bg;
+    ul {
+        display: flex;
+        justify-self: start;
+        list-style: none;
+        li{
+            padding: 1em 1em;
+        a{
+            text-decoration: none;
+            color: #61dafb;
+        }
+        }
+    }
+}
+
+.list_of_themes {
+    padding: 1em 0em;
+    margin: 1em 0em;
+    color: gray;
+    li {
+        text-align: start;
+        width: 70%;
+        margin: 0 auto;
+        a {
+            text-decoration: none;
+            color: darken($color: $seconColor, $amount: 20);
+            line-height: 2em;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+.refTitle {
+    color: white;
+    padding: 0.7em;
+    font-size: 1.7em;
+    font-weight: 500;
+    background-color: $bg;
+}
+
+.refer, .basic {    
+
+.back {
+    background-color: $seconColor;
+    border: none;
+    padding: 0.5em 1em;
+    float: left;
+   top: -3em;
+   left: 0.1em;
+   position: relative;
+   
+}
+}
+
+
+
+article {
+    border: 2px dotted $bg;
+    text-align: start;
+    padding: 1em;
+    width: 90%;
+    margin: 1em auto;
+    ol, p, h1, h2 {
+        margin-top: 2em;
+        line-height: 1.6em;
+    }
+}
+.usageList {
+    margin: 1em auto;
+    width: 80%;
+}
+.list {
+    padding-left: 2em;
+    padding-top: 0.5em;
+}
+
+.anim {
+    animation: themes 1s linear  forwards;
+}
+
+@keyframes themes {
+     from {
+         opacity: 0;
+         transform: scaleY(0);
+         background-color: white;
+     }
+     to {
+        opacity: 1;
+        transform: scaleY(1);
+        background-color: $bg;
+        
+    }
+}
+
+.tenseform {
+   display: grid;
+    ul {
+    list-style: none;
+    
+    li{
+        line-height: 2.5em;
+        font-weight: 500;
+        color: darken($color: $seconColor, $amount: 25);
+    }
+    }
+    background-color: lighten($color: $bg, $amount: 5);
+    border-radius: 1em;
+    padding: 1em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.notes {
+    background-color: lighten($color: $seconColor, $amount: 7);
+    padding: 1px 1em;
+    border-radius: 1em;
+    margin: 1em;
+    margin-top: 4em;
+    ol, .examples{
+        width: 85%;
+        margin: 1em auto;
+    }
+    
+
+}
+
+@media (min-width: 5000px) and (max-width: 8000px){
+   
+        .tenseform, .notes {
+            width: 70%;
+            margin: 0 auto;
+        }
+    .tenses {
+        h1 {
+            width: 73%;
+            margin: 0 auto;
+            margin-top: 2em;
+        }
+    }
+        .notes {
+           
+            margin-top: 2em;
+        }
+    
+}
